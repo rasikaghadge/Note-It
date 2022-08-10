@@ -23,6 +23,7 @@ app.listen(PORT, () => {
 //connecting to db
 const URI = process.env.MONGODB_URL
 
+//connecting to db
 mongoose.connect(URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
