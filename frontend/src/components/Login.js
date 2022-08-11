@@ -62,7 +62,7 @@ export default function Login({setIsLogin}) {
                     onChange={onChangeInput} />
 
                     <button type="submit">Login</button>
-                    <p>You don't have an account?
+                    <p>Don't have an account?
                         <span onClick={() => setOnLogin(true)}> Register Now</span>
                     </p>
                     <h3>{err}</h3>
@@ -84,7 +84,7 @@ export default function Login({setIsLogin}) {
                     autoComplete="true" onChange={onChangeInput} />
 
                     <button type="submit">Register</button>
-                    <p>You have an account?
+                    <p>Have an account already?
                         <span onClick={() => setOnLogin(false)}> Login Now</span>
                     </p>
                     <h3>{err}</h3>
