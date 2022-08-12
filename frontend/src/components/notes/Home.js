@@ -40,7 +40,9 @@ export default function Home() {
             {
                 notes.map(note =>(
                     <div className="card" key={note._id}>
-                        <h4 title={note.title}>{note.title}</h4>
+                    <div className="card-header">
+                        <h3 title={note.title}>{note.title}</h3>
+                        </div>
                         <div className="text-wrapper">
                             <p>{note.content}</p>
                         </div>

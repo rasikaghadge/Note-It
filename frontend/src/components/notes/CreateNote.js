@@ -59,7 +59,7 @@ export default function CreateNote() {
                     name="date" onChange={onChangeInput} />
                 </div>
 
-                <button type="submit">Save</button>
+                <button type="submit">CREATE</button>
             </form>
         </div>
     )

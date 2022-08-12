@@ -2,27 +2,27 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-body{
-  background: rgb(63,9,63);
+body {
+  background: white;
 }
-.notes-page{
+.notes-page {
   width: 100%;
   min-height: 100vh;
   color: whitesmoke;
 }
-.notes-page header{
+.notes-page header {
   max-width: 1920px;
   min-height: 100px;
   overflow: hidden;
@@ -31,67 +31,78 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background: #e89f2c;
 }
-a{
+a {
   text-decoration: none;
   color: whitesmoke;
 }
-.notes-page header .logo{
+.notes-page header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.notes-page header ul li{
+.notes-page header ul li {
   list-style: none;
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 25px;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.notes-page header ul li a{
+.notes-page header ul li a {
   text-transform: uppercase;
-  opacity: 0.7;
-}
-.notes-page header ul li a:hover{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
   opacity: 1;
 }
-.notes-page section{
+.notes-page header ul li a:hover {
+  opacity: 0.8;
+}
+
+.notes-page section {
   width: 100%;
-  box-shadow: 0 0 5px rgb(7,25,63);
+  /* box-shadow: 0 0 0px #e89f2c; */
   padding: 20px 0;
 }
-.note-wrapper{
+.note-wrapper {
   max-width: 1920px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
 }
-.card{
+.card {
   width: 300px;
-  box-shadow: 0 0 5px rgb(7,25,63);
-  background: rgb(7,25,63);
+  box-shadow: 0 0 5px #e89f2c;;
+  background: white;
   padding: 10px;
   position: relative;
-  color: #ddd;
+  color: black;
   margin: 15px;
   cursor: pointer;
 }
-.card .close{
+.card .close {
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   font-weight: 900;
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  color: white;
+  color: #e89f2c;;
 }
-.card h4{
+
+.card h3 {
   margin-right: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  
 }
-.card .text-wrapper{
+.card .text-wrapper {
   width: 100%;
   height: 150px;
   display: -webkit-box;
@@ -99,13 +110,13 @@ a{
   -webkit-line-clamp: 7;
   overflow: hidden;
   margin: 10px 0;
-  color: #fff9;
+  color: #e89f2c;
 }
-.card .date{
+.card .date {
   text-align: right;
-  color: wheat;
+  color: #e89f2c;
 }
-.card-footer{
+.card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,86 +125,125 @@ a{
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
+  color: black;
 }
-/* ******* Create Note******************* */
-.create-note{
+.card-footer a {
+  font-weight: bolder;
+  padding: 4px;
+  color: #e89f2c;
+}
+
+/*Create note*/
+.create-note {
   max-width: 500px;
+  color: #e89f2c;
   width: 100%;
   margin: auto;
-  border: 10px solid #ccc;
+  border: 1px solid #e89f2c;
   padding: 30px;
 }
-.create-note h2{
+.create-note h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 10px 0;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.create-note .row{
+.create-note .row {
   width: 100%;
   margin: 10px 0;
 }
 .create-note input,
-.create-note button{
+.create-note button {
   width: 100%;
   height: 40px;
-  padding:  0 5px;
+  padding: 0 5px;
 }
-.create-note label{
+.create-note label {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
 }
-.create-note textarea{
+.create-note textarea {
   width: 100%;
   resize: none;
   padding: 0 5px;
 }
-.create-note button{
+.create-note button {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
-  color: rgb(7,25,63);
+  color: white;
+  background: #e89f2c;
+  border: 0px;
+  border-radius: 4px;
 }
-@media (max-width: 500px){
-  .create-note{
+@media (max-width: 500px) {
+  .create-note {
     padding: 15px;
-    border: 5px solid #ccc;
+    border: 1px solid #e89f2c;
   }
 }
 
 /* *********Login / Register******* */
-.login-page{
+.login-page {
   position: relative;
   width: 100%;
   min-height: 100vh;
 }
 .login input,
-.register input{
+.register input {
   margin-bottom: 15px;
+  border-radius: 10px;
+  border-color: white;
+  /* border-style: none; */
 }
 .login,
-.register{
+.register {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(63,9,63);
+  background: #fffdf9;
+  border-radius: 20px;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.login-page h2,
-.login-page h3{
-  color: #fff8;
-}
-.login-page h3{
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 15px;
-}
-.login-page p{
-  margin: 10px 0;
+
+.login button,
+.register button {
+  background-color: #e89f2c;
+  border: 0px solid white;
   color: white;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
 }
-.login-page span:hover{
-  color: orange;
+
+.login-page h2 {
+  text-align: center;
+  margin: 10px;
+  font-family: "Merriweather", serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.login-page h2,
+.login-page h3 {
+  color: #e89f2c;
+}
+.login-page h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.login-page p {
+  margin: 10px 0;
+  color: black;
+}
+.login-page span {
+  color: #e89f2c;
+}
+.login-page span:hover {
+  color: #ca8939;
   cursor: pointer;
 }
