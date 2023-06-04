@@ -31,7 +31,7 @@ Install the dependencies:\
 
 Create a .env file in the backend directory and add the following environment variables:\
 ```PORT=5000```
-```MONGO_URI=<your-mongodb-connection-string>```\
+```MONGODB_URL=<your-mongodb-connection-string>```\
 Replace <your-mongodb-connection-string> with the connection string for your MongoDB database.
 
 Start the backend server:\
